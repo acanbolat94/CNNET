@@ -22,6 +22,6 @@ namespace Core.Specifications
         {
             Includes.Add(includeExpression);
         }
-
+        
     }
 }
