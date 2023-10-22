@@ -31,10 +31,10 @@ namespace Infrastructure.Data
         {
             // var typeId = 1;
             // var products = _context.Products.Where(x=> x.ProductTypeId ==typeId).ToListAsync();
-            
+
             return await _context.Products
-            .Include(p=>p.ProductType)
-            .Include(p=>p.ProductBrand)
+            .Include(p => p.ProductType)
+            .Include(p => p.ProductBrand)
             .ToListAsync();
         }
 
